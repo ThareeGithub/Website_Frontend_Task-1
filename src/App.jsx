@@ -1,34 +1,34 @@
 import React from 'react';
-import image1 from './assets/AccountandSetup.png'
+import image1 from './assets/Account and Setup.png'
 import image2 from './assets/AI.jpg'
-import image3 from './assets/automation.jpg';
+import image3 from './assets/Automation.jpg';
 import image4 from './assets/Commerce.jpeg'
 import image5 from './assets/CRM.png'
-import image6 from './assets/GetStarted.jpeg'
-import image7 from './assets/MarketingTools.jpeg'
+import image6 from './assets/Get Started.jpeg'
+import image7 from './assets/Marketing Tools.jpeg'
 import image8 from './assets/Messaging.jpeg'
 import image9 from './assets/Partners.png'
-import image10 from './assets/Reportinganddata.jpeg'
-import image11 from './assets/Salestools.jpeg'
-import image12 from './assets/Servicetools.jpeg'
-import image13 from './assets/Webcontent.jpeg'
+import image10 from './assets/Reporting and Data.jpeg'
+import image11 from './assets/Sales Tools.jpeg'
+import image12 from './assets/Service Tools.jpeg'
+import image13 from './assets/Web Content.jpeg'
 import image14 from './assets/Workspaces.jpeg'
 
 // Mock data for the categories
 const categories = [
-  { title: "AccountandSetup", imgSrc: image1 },
+  { title: "Account and Setup", imgSrc: image1 },
   { title: "AI", imgSrc: image2 },
-  { title: "automation", imgSrc: image3 },
+  { title: "Automation", imgSrc: image3 },
   { title: "Commerce", imgSrc: image4 },
   { title: "CRM", imgSrc: image5 },
-  { title: "GetStarted", imgSrc: image6, label: "UPDATED" },
-  { title: "MarketingTools", imgSrc: image7 },
+  { title: "Get Started", imgSrc: image6, label: "UPDATED" },
+  { title: "Marketing Tools", imgSrc: image7 },
   { title: "Messaging", imgSrc: image8 },
   { title: "Partners", imgSrc: image9 },
-  { title: "Reportinganddata", imgSrc: image10 },
-  { title: "SalesTools", imgSrc: image11 },
-  { title: "Servicetools", imgSrc: image12 },
-  { title: "Webcontent", imgSrc: image13 },
+  { title: "Reporting and Data", imgSrc: image10 },
+  { title: "Sales Tools", imgSrc: image11 },
+  { title: "Service Tools", imgSrc: image12 },
+  { title: "Web Content", imgSrc: image13 },
   { title: "Workspaces", imgSrc: image14 }
 ];
 
@@ -94,13 +94,13 @@ function App() {
       </section>
 
       {/* Categories Grid */}
-      <section className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-6 max-w-5xl px-4 py-8 mx-auto">
+      <section className="grid grid-cols-3 xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl px-4 py-8 mx-auto">
         {categories.map((category, index) => (
           <div
             key={index}
             className="aspect-square bg-white p-4 rounded-lg shadow-md flex flex-col items-center transition transform hover:scale-105"
           >
-            <img src={category.imgSrc} alt={category.title} className="w-full mb-4" />
+            <img src={category.imgSrc} alt={category.title} className="mb-4" />
             <h2 className="text-3xl font-medium text-gray-700">{category.title}</h2>
             {category.label && (
               <span className="mt-2 text-xs bg-teal-500 text-white py-1 px-2 rounded-full">
