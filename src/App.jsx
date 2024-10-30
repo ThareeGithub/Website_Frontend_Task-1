@@ -18,7 +18,7 @@ import image14 from './assets/work spaces.jpeg'
 const categories = [
   { title: "Account & Setup", imgSrc: image1 },
   { title: "AI", imgSrc: image2 },
-  { title: "Automation", imgSrc: image3 },
+  { title: "automation", imgSrc: image3 },
   { title: "Commerce", imgSrc: image4 },
   { title: "CRM", imgSrc: image5 },
   { title: "Get Started", imgSrc: image6, label: "UPDATED" },
