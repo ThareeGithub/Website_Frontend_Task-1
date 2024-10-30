@@ -1,11 +1,36 @@
 import React from 'react';
-import image1 from './assets/Account and Setup.png'
+import image1 from './assets/Account and Setup.png';
+import image2 from './assets/AI.jpg'
+import image4 from './assets/Commerce.jpeg';
+import image5 from './assets/CRM.png';
+import image6 from './assets/Get Started.jpeg';
+import image7 from './assets/Marketing Tools.jpeg';
+import image8 from './assets/Messaging.jpeg';
+import image9 from './assets/Partners.png';
+import image10 from './assets/Reporting and Data.jpeg';
+import image11 from './assets/Sales Tools.jpeg';
+import image12 from './assets/Service Tools.jpeg';
+import image13 from './assets/Web Content.jpeg';
+import image14 from './assets/Workspaces.jpeg';
 
 
 // Mock data for the categories
 const categories = [
   { title: "Account and Setup", imgSrc: image1 },
+  { title: "AI", imgSrc: image2 },
+  { title: "Commerce", imgSrc: image4 },
+  { title: "CRM", imgSrc: image5 },
+  { title: "Get Started", imgSrc: image6, label: "UPDATED" },
+  { title: "Marketing Tools", imgSrc: image7 },
+  { title: "Messaging", imgSrc: image8 },
+  { title: "Partners", imgSrc: image9 },
+  { title: "Reporting and Data", imgSrc: image10 },
+  { title: "Sales Tools", imgSrc: image11 },
+  { title: "Service Tools", imgSrc: image12 },
+  { title: "Web Content", imgSrc: image13 },
+  { title: "Workspaces", imgSrc: image14 }
 ];
+
 
 function App() {
   return (
