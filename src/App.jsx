@@ -19,7 +19,7 @@ import image14 from './assets/Workspaces.jpeg';
 const categories = [
   { title: "Account and Setup", imgSrc: image1 },
   { title: "AI", imgSrc: image2 },
-  { title: "Automation", imgSrc: image3 },
+  { title: "AI Wada Natte", imgSrc: image3 },
   { title: "Commerce", imgSrc: image4 },
   { title: "CRM", imgSrc: image5 },
   { title: "Get Started", imgSrc: image6, label: "UPDATED" },
