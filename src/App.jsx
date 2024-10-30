@@ -1,7 +1,7 @@
 import React from 'react';
 import image1 from './assets/Account and Setup.png'
 import image2 from './assets/AI.jpg'
-import image3 from './assets/automation.jpg'
+import image3 from './assets/automation.jpg';
 import image4 from './assets/Commerce.jpeg'
 import image5 from './assets/CRM.png'
 import image6 from './assets/Get Started.jpeg'
