@@ -1,7 +1,6 @@
 import React from 'react';
 import image1 from './assets/Account and Setup.png';
 import image2 from './assets/AI.jpg';
-import image3 from './assets/Automation.jpg';
 import image4 from './assets/Commerce.jpeg';
 import image5 from './assets/CRM.png';
 import image6 from './assets/Get Started.jpeg';
@@ -19,7 +18,6 @@ import image14 from './assets/Workspaces.jpeg';
 const categories = [
   { title: "Account and Setup", imgSrc: image1 },
   { title: "AI", imgSrc: image2 },
-  { title: "Automation", imgSrc: image3 },
   { title: "Commerce", imgSrc: image4 },
   { title: "CRM", imgSrc: image5 },
   { title: "Get Started", imgSrc: image6, label: "UPDATED" },
