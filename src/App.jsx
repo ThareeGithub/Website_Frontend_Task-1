@@ -40,30 +40,32 @@ function App() {
       
 
       {/* Header */}
-      <header className="flex justify-between items-center px-6 py-4 bg-white shadow-md">
-        <div className="text-2xl font-bold text-gray-800">
-          <span className="text-orange-500">THAREE</span> Website Testing
-        </div>
-        <nav className="flex space-x-6 text-gray-600">
-          <a href="#" className="hover:text-gray-800">Help Center</a>
-          <a href="#" className="hover:text-gray-800">Documentation</a>
-          <a href="#" className="hover:text-gray-800">Training</a>
-          <a href="#" className="hover:text-gray-800">Community</a>
-          <a href="#" className="hover:text-gray-800">Blogs</a>
-        </nav>
-        <div className="flex space-x-4">
-          <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
-            Get a demo
-          </button>
-          <button className="border border-orange-500 text-orange-500 px-4 py-2 rounded hover:bg-orange-100">
-            Get started free
-          </button>
-        </div>
-      </header>
-      {/* Notification Banner */}
-      <div className="bg-yellow-100 text-center py-6 px-5 text-gray-700 text-lg">
-        On Monday, October 28th, the support phone line will be closed from 4am until 10am EST. Chat support may be limited due to a regional holiday. You can continue to reach us by clicking the "Help" button in your account.
-      </div>
+<header className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 py-4 bg-white shadow-md space-y-4 md:space-y-0">
+  <div className="text-xl sm:text-2xl font-bold text-gray-800 text-center md:text-left">
+    <span className="text-orange-500">THAREE</span> Website Testing
+  </div>
+  <nav className="flex flex-wrap justify-center md:justify-start space-x-4 md:space-x-6 text-gray-600 text-sm sm:text-base">
+    <a href="#" className="hover:text-gray-800">Help Center</a>
+    <a href="#" className="hover:text-gray-800">Documentation</a>
+    <a href="#" className="hover:text-gray-800">Training</a>
+    <a href="#" className="hover:text-gray-800">Community</a>
+    <a href="#" className="hover:text-gray-800">Blogs</a>
+  </nav>
+  <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 items-center">
+    <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 w-full sm:w-auto">
+      Get a demo
+    </button>
+    <button className="border border-orange-500 text-orange-500 px-4 py-2 rounded hover:bg-orange-100 w-full sm:w-auto">
+      Get started free
+    </button>
+  </div>
+</header>
+
+{/* Notification Banner */}
+<div className="bg-yellow-100 text-center py-4 px-4 sm:px-6 text-gray-700 text-sm sm:text-base">
+  On Monday, October 28th, the support phone line will be closed from 4am until 10am EST. Chat support may be limited due to a regional holiday. You can continue to reach us by clicking the "Help" button in your account.
+</div>
+
 
       {/* Search Section */}
       <section className="text-center py-12 bg-teal-500 text-white">
@@ -96,22 +98,25 @@ function App() {
       </section>
 
       {/* Categories Grid */}
-      <section className="grid grid-cols-3 xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl px-4 py-8 mx-auto">
-        {categories.map((category, index) => (
-          <div
-            key={index}
-            className="aspect-square bg-white p-4 rounded-lg shadow-md flex flex-col items-center transition transform hover:scale-105"
-          >
-            <img src={category.imgSrc} alt={category.title} className="mb-4" />
-            <h2 className="text-3xl font-medium text-gray-700">{category.title}</h2>
-            {category.label && (
-              <span className="mt-2 text-xs bg-teal-500 text-white py-1 px-2 rounded-full">
-                {category.label}
-              </span>
-            )}
-          </div>
-        ))}
-      </section>
+<section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-5xl px-2 sm:px-4 py-6 mx-auto">
+  {categories.map((category, index) => (
+    <div
+      key={index}
+      className="aspect-square bg-white p-4 rounded-lg shadow-md flex flex-col items-center transition transform hover:scale-105"
+    >
+      <img src={category.imgSrc} alt={category.title} className="mb-3 w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24" />
+      <h2 className="text-lg sm:text-xl lg:text-2xl font-medium text-gray-700 text-center">
+        {category.title}
+      </h2>
+      {category.label && (
+        <span className="mt-2 text-xs sm:text-sm lg:text-base bg-teal-500 text-white py-1 px-2 rounded-full text-center">
+          {category.label}
+        </span>
+      )}
+    </div>
+  ))}
+</section>
+
 
       {/* Footer */}
       <footer className="w-full bg-gray-800 text-gray-200 py-4 text-center text-sm">
